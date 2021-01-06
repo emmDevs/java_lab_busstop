@@ -28,13 +28,18 @@ public class Bus {
         if (passengerCount() < this.capacity) {
             this.passengers.add(person);
         }
-//        }else{
-//            System.out.println("Sorry bus is full");
-//        }
+//
     }
 
     public void removePassengers(Person person) {
         this.passengers.remove(person);
     }
+
+//    public void pickUpFromBusStop(BusStop busStop){
+//        if(this.passengerCount() < this.capacity && busStop.countQueue() > 0){
+//            Person personRemoved = busStop.removeFromQueue();
+//            this.addPassengers(personRemoved);
+//        }
+//    }
 }
 

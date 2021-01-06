@@ -27,4 +27,17 @@ public class BusStopTest {
     public void busStopHasEmptyQueue(){
         assertEquals(0, busStop.countQueue());
     }
+
+    @Test
+    public void canAddPersonToBusStopQueue(){
+        busStop.addPersonToQueue(person1);
+        assertEquals(1, busStop.countQueue());
+    }
+
+    @Test
+    public void canRemovePersonFromQueue(){
+        busStop.addPersonToQueue(person1);
+        busStop.removePersonFromQueue(person1);
+        assertEquals(0, busStop.countQueue());
+    }
 }
