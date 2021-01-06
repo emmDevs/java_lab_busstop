@@ -15,5 +15,9 @@ public class Bus {
     public String getDestinationName() {
         return this.destination;
     }
+
+    public int getCapacity() {
+        return this.capacity;
+    }
 }
 
