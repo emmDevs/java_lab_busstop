@@ -23,5 +23,9 @@ public class Bus {
     public int passengerCount() {
         return this.passengers.size();
     }
+
+    public void addPassengers(Person person){
+        this.passengers.add(person);
+    }
 }
 
